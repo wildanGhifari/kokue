@@ -7,6 +7,8 @@
 
     <!-- Bootstrap 4 core CSS -->
     <link href="<?= base_url('/assets/libs/bootstrap/css/bootstrap.min.css') ?>" rel="stylesheet">
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="<?= base_url('/assets/libs/fontawesome/css/all.min.css') ?>">
 
     <link rel="stylesheet" href="<?= base_url('assets/css/app.css') ?>">
     <title><?= isset($title) ? $title : 'Kokue' ?></title>
