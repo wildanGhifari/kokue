@@ -19,16 +19,6 @@ class My_Controller extends CI_Controller {
     public function view($data) {
         $this->load->view('layouts/app', $data);
     }
-
-    public function is_login() {
-        $is_login   = $this->session->userdata('is_login');
-        if ($is_login) {
-            redirect(base_url());
-            return;
-        } else {
-            redirect(base_url('login'));
-        }
-    }
 }
 
 /* End of file My_Controller.php */
