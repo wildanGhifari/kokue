@@ -4,6 +4,6 @@
     <!-- End of Navbar -->
 
     <div id="mainContent">
-        <h3>Dashboard</h3>
+        <h3><?= $title ?></h3>
     </div>
 </main>

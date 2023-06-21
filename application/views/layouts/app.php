@@ -22,7 +22,6 @@
     <?php $this->load->view($page); ?>
     <!-- End of Content -->
 
-    <!-- <script src="<?= base_url('/assets/libs/jquery/jquery-3.5.1.min.js') ?>"></script> -->
     <script src="<?= base_url('/assets/libs/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
     <script src="<?= base_url('/assets/js/app.js') ?>"></script>
 </body>
