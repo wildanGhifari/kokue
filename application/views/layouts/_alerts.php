@@ -23,16 +23,8 @@ if ($warning) {
 ?>
 
 <?php if ($success || $error || $warning) : ?>
-    <div class="container-xl px-0">
-        <div class="row mt-4 mb-3">
-            <div class="col-md-12">
-                <div class="alert <?= $alert_status ?> alert-dismissible fade show" role="alert">
-                    <strong><?= $status ?></strong> <?= $message ?>.
-                    <button class="close" type="button" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-            </div>
-        </div>
+    <div class="alert <?= $alert_status ?> alert-dismissible fade show" role="alert">
+        <strong><?= $status ?></strong> <?= $message ?>.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
 <?php endif ?>
