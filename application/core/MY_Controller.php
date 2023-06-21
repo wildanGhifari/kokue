@@ -12,12 +12,22 @@ class My_Controller extends CI_Controller {
         if (file_exists(APPPATH . 'models/' . $model . '_model.php')) {
             $this->load->model($model . '_model', $model, true);
         }
+
+        $is_login   = $this->session->userdata('is_login');
     }
-
-
     // Load view with Default Layouts
     public function view($data) {
         $this->load->view('layouts/app', $data);
+    }
+
+    public function is_login() {
+        $is_login   = $this->session->userdata('is_login');
+        if ($is_login) {
+            redirect(base_url());
+            return;
+        } else {
+            redirect(base_url('login'));
+        }
     }
 }
 
