@@ -39,11 +39,11 @@ class Login_model extends MY_Model {
         if (!empty($query) && hashEncryptVerify($input->password, $query->password)) {
             $sess_data = [
                 'id'        => $query->id,
-                'name'        => $query->name,
-                'email'        => $query->email,
-                'role_id'        => $query->role,
+                'name'      => $query->name,
+                'email'     => $query->email,
+                'role_id'   => $query->role,
                 'image'     => $query->image,
-                'is_login'    => true,
+                'is_login'  => true,
             ];
             $this->session->set_userdata($sess_data);
             return true;

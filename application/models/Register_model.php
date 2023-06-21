@@ -62,7 +62,7 @@ class Register_model extends MY_Model {
             'id'        => $user,
             'name'      => $data['name'],
             'email'     => $data['email'],
-            'role'      => $data['role'],
+            'rol_id'    => $data['role_id'],
             'image'     => $data['image'],
             'is_login'  => false
         ];

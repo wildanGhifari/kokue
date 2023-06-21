@@ -12,7 +12,7 @@
             <a href="<?= base_url('/reports') ?>" class="nav-link text_small">Reports</a>
         </div>
         <div class="settings">
-            <a href="<?= base_url('/settings') ?>" class="nav-link text_small">Settings</a>
+            <a href="<?= base_url('/logout') ?>" class="nav-link text_small">Logout</a>
         </div>
     </div>
 </div>
