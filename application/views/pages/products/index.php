@@ -6,7 +6,7 @@
     <div id="mainContent">
         <div class="product-header">
             <h3><?= $title; ?></h3>
-            <button class="btn btn-primary">
+            <button class="btn btn-primary btn-sm rounded">
                 <span style="margin-right: 8px;">
                     <i class="fa-regular fa-plus"></i>
                 </span>
