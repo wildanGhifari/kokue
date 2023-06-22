@@ -14,7 +14,16 @@
             </button>
         </div>
         <div class="product-cards-container">
-            <div class="card grid-1" style="width: 18rem;">
+            <?php foreach ($products as $product) : ?>
+                <div class="card">
+                    <img src="<?= base_url('assets/imgs/img-placeholder.png') ?>" class="card-img-top" alt="Product image">
+                    <div class="card-body">
+                        <h5 class="card-title"><?= $product->product_name; ?></h5>
+                        <p class="card-text">Rp.<?= number_format($product->price, 0, ',', '.') ?></p>
+                    </div>
+                </div>
+            <?php endforeach ?>
+            <!-- <div class="card grid-1" style="width: 18rem;">
                 <img src="<?= base_url('assets/imgs/img-placeholder.png') ?>" class="card-img-top" alt="Product image">
                 <div class="card-body">
                     <h5 class="card-title">Chocolate</h5>
@@ -125,7 +134,7 @@
                     <h5 class="card-title">Chocolate</h5>
                     <p class="card-text">Rp. 150.000</p>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </main>

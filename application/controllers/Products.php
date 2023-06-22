@@ -16,8 +16,13 @@ class Products extends My_Controller {
     }
 
     public function index() {
-        $data['title'] = 'Products';
-        $data['page'] = 'pages/products/index';
+        $data['title']      = 'Products';
+        $data['products']   = $this->products->select([
+            'product.id', 'product.name AS product_name', 'product.description',
+            'product.image', 'product.price', 'category.id', 'category.category_name AS category_name'
+        ])->join('category')->get();
+
+        $data['page']       = 'pages/products/index';
 
         $this->view($data);
     }
