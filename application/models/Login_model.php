@@ -41,7 +41,7 @@ class Login_model extends MY_Model {
                 'id'        => $query->id,
                 'name'      => $query->name,
                 'email'     => $query->email,
-                'role_id'   => $query->role,
+                'role_id'   => $query->role_id,
                 'image'     => $query->image,
                 'is_login'  => true,
             ];

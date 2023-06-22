@@ -121,11 +121,21 @@ small,
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 24px;
+}
+
+#searchBar {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
 }
 
 #userContainer {
+    width: 20%;
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
     gap: 24px;
 }
 
@@ -137,6 +147,8 @@ small,
 }
 
 .user-name {
+    width: 100% !important;
+    flex-wrap: nowrap;
     font-weight: bold;
 }
 
