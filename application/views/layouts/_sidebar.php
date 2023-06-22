@@ -6,7 +6,7 @@
     </div>
     <div class="nav-container">
         <div class="nav-links">
-            <a href="<?= base_url() ?>" class="nav-link text_small nav-active">
+            <a href="<?= base_url() ?>" class="nav-link text_small">
                 <span class="material-symbols-rounded">
                     dashboard
                 </span>
