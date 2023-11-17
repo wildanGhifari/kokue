@@ -6,12 +6,12 @@
     <div id="mainContent">
         <div class="product-header">
             <h3><?= $title; ?></h3>
-            <button class="btn btn-primary btn-sm rounded">
+            <a href="<?= base_url('products/add') ?>" class="btn btn-primary btn-sm rounded">
                 <span style="margin-right: 8px;">
                     <i class="fa-regular fa-plus"></i>
                 </span>
                 New Product
-            </button>
+            </a>
         </div>
         <div class="product-cards-container">
             <?php foreach ($products as $product) : ?>
